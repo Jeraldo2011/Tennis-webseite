@@ -9,7 +9,7 @@ body {
 
 header {
   background-color: #090909;
-  color: #e4e9e5(0, 0, 0);
+  color: #e4e9e5;
   padding: 25px;
   text-align: center;
 }
@@ -20,17 +20,30 @@ nav {
   text-align: center;
 }
 
+video {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+video:hover {
+  transform: scale(1.05); /* grows slightly */
+  box-shadow: 0 0 40px #a6bd0b, 0 10px 20px rgba(0, 0, 0, 0.4); /* green glow + shadow */
+}
+
 nav a {
+  display: inline-block;
   color: hsl(132, 10%, 90%);
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition: color 0.2s ease, text-shadow 0.2s ease, transform 0.2s ease;
 }
 
 nav a:hover {
-   color: #66bb6a;
-  text-shadow: 0 0 8px #66bb6a, 0 0 12px #66bb6a;
+  color: #a6bd0b;
+  text-shadow: 0 0 8px #a6bd0b, 0 0 12px #a6bd0b;
   transform: scale(1.5);
 }
 
@@ -53,10 +66,10 @@ img {
 }
 img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 40px  #145c2b, 0 10px 20px rgba(0,0,0,0.4);
-
+  box-shadow: 0 0 40px #a6bd0b, 0 10px 20px rgba(0, 0, 0, 0.4);
+}
 footer {
-  background-color: #145c2b;
+  background-color: #a6bd0b;
   color: white;
   text-align: center;
   padding: 15px;
