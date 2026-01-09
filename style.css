@@ -4,31 +4,34 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #080808;
-  color: #128c25;
+  color: hsl(132, 10%, 90%);
 }
 
 header {
-  background-color: #1f7a3a;
-  color: rgb(0, 0, 0);
+  background-color: #090909;
+  color: #e4e9e5(0, 0, 0);
   padding: 25px;
   text-align: center;
 }
 
 nav {
-  background-color: #145c2b;
+  background-color: #080808;
   padding: 12px;
   text-align: center;
 }
 
 nav a {
-  color: rgb(0, 0, 0);
+  color: hsl(132, 10%, 90%);
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+   color: #66bb6a;
+  text-shadow: 0 0 8px #66bb6a, 0 0 12px #66bb6a;
+  transform: scale(1.5);
 }
 
 section {
@@ -38,7 +41,7 @@ section {
 }
 
 h2 {
-  color: #1f7a3a;
+  color: #e4e9e5;
 }
 
 img {
@@ -46,7 +49,11 @@ img {
   max-width: 650px;
   border-radius: 10px;
   margin-top: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px  #145c2b, 0 10px 20px rgba(0,0,0,0.4);
 
 footer {
   background-color: #145c2b;
