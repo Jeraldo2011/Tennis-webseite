@@ -60,8 +60,8 @@ h2 {
 img {
   width: 100%;
   border-radius: 10px;
-  margin-top: 40px auto;
   display: block;
+  margin: 30px auto; /* ↑↓ Abstand größer, ←→ zentriert */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 img:hover {
